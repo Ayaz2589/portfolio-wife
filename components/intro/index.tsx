@@ -22,7 +22,7 @@ export default function Intro() {
           className="my-10"
         >
           <Image
-            src="/picture.JPG"
+            src="/picture.png"
             alt="Ayaz's profile picture"
             height={192}
             width={192}
