@@ -19,6 +19,7 @@ export default function Intro() {
             type: "tween",
             duration: 0.2,
           }}
+          className="my-10"
         >
           <Image
             src="/picture.JPG"
