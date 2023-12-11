@@ -4,3 +4,4 @@ export { default as SectionDivder } from "./section-divider";
 export { default as AboutMe } from "./about-me";
 export { default as SectionHeading } from "./section-heading";
 export { default as Projects } from "./projects";
+export { default as Project } from "./projects/project";
