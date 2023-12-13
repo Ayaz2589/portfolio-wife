@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 import { links } from "@/lib";
 import Link from "next/link";
 import clsx from "clsx";
+import { useActiveSection } from "@/hooks";
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection } = useActiveSection();
   return (
     <header className="z-[999] relative">
       <motion.div
