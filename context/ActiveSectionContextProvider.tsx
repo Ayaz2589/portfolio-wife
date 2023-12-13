@@ -3,7 +3,7 @@
 import React, { useState, createContext } from "react";
 import { links } from "@/lib";
 
-type ActiveSectionType = (typeof links)[number]["name"] | null;
+export type ActiveSectionType = (typeof links)[number]["name"] | null;
 
 type ActiveSectionContextType = {
   activeSection: ActiveSectionType;
