@@ -1,4 +1,11 @@
-import { Intro, SectionDivder, AboutMe, Projects, Skills, Experience } from "@/components";
+import {
+  Intro,
+  SectionDivder,
+  AboutMe,
+  Projects,
+  Skills,
+  Experience,
+} from "@/components";
 
 export default function Home() {
   return (
