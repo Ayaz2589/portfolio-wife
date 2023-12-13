@@ -36,7 +36,7 @@ export default function Experience() {
     >
       <SectionHeading>Experience</SectionHeading>
       <div className="container mx-auto w-full h-full">
-        <div className="relative wrap overflow-hidden p-10 h-full">
+        <div className="relative wrap overflow-hidden p-4 sm:p-10 h-full">
           <div
             className="hidden sm:block border-2-2 absolute bg-gray-300 h-full border w-1 rounded-full"
             style={{ left: "49.9%" }}
