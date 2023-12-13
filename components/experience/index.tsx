@@ -15,6 +15,12 @@ const fadeInAnimation = {
   }),
 };
 
+const leftAlign =
+  "mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline";
+
+const rightAlign =
+  "mb-8 flex justify-between items-center w-full right-timeline";
+
 export default function Experience() {
   const { ref } = useSectionInView({ sectionName: "Experience" });
   return (
@@ -33,7 +39,7 @@ export default function Experience() {
           {experiencesData.map((data, index) => (
             <motion.div
               key={index}
-              className={data.className}
+              className={index % 2 === 0 ? leftAlign : rightAlign}
               variants={fadeInAnimation}
               initial="initial"
               whileInView="animate"
