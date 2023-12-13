@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib";
 import Link from "next/link";
@@ -8,7 +8,8 @@ import clsx from "clsx";
 import { useActiveSection } from "@/hooks";
 
 export default function Header() {
-  const { activeSection, setActiveSection } = useActiveSection();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSection();
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -31,7 +32,10 @@ export default function Header() {
                   { "text-gray-950": activeSection === link.name }
                 )}
                 href={link.hash}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
               >
                 {link.name}
                 {link.name === activeSection && (
