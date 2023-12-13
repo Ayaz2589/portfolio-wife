@@ -62,23 +62,23 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "The Dashboard",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "The Dashboard showcases React and TypeScript's capabilities in a clean and maintainable codebase for a responsive and interactive user interface.",
+    tags: ["React", "Material UI", "ReCharts", "AG-Grid", "JWT Auth", "Axios"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Node Services",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "The NodeJS backend powers 'The Dashboard' web app's authentication and data fetching, using MongoDB Atlas for user data storage.",
+    tags: ["Node", "Express", "Bcrpyt", "JWT", "Mongo DB", "Mongoose"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Portfolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "User Portfolio that allows users to learn about my skills and experience, As well as contact me.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
@@ -92,16 +92,15 @@ export const skills = [
   "React",
   "Next.js",
   "Node.js",
+  "Material UI",
+  "Chakra UI",
   "Git",
   "Tailwind",
   "Prisma",
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Storybook",
   "Framer Motion",
 ] as const;
