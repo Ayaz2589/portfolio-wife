@@ -16,10 +16,9 @@ const fadeInAnimation = {
 };
 
 const leftAlign =
-  "mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline";
+  "mb-0 flex justify-between flex-row-reverse items-center w-full left-timeline";
 
-const rightAlign =
-  "mb-8 flex justify-between items-center w-full right-timeline";
+const rightAlign = "flex justify-between items-center w-full right-timeline";
 
 export default function Experience() {
   const { ref } = useSectionInView({ sectionName: "Experience" });
@@ -69,11 +68,13 @@ function TimelineTick({ value }: { value: any }) {
 
 function TimelineCard({ value }: { value: any }) {
   return (
-    <div className="order-1 bg-white border border-black/[0.1] rounded-xl w-5/12 px-6 py-4">
-      <h3>{value.title}</h3>
-      <p>{value.location}</p>
-      <p>{value.date}</p>
-      <p>{value.description}</p>
+    <div className="order-1 bg-white border border-black/[0.1] rounded-xl w-5/12 px-6 py-4 text-left min-h-[10rem] text-gray-600">
+      <h3 className="text-lg text-gray-800 font-semibold">{value.title}</h3>
+      <h4 className="text-sm text-gray-800 mb-2">{value.company}</h4>
+      <p className="text-xs">{value.location}</p>
+      <p className="text-xs">{value.date}</p>
+      <hr className="my-3 h-[1px] border-t-0 bg-gray-200 opacity-100 dark:opacity-50" />
+      <p className="text-sm py-3">{value.description}</p>
     </div>
   );
 }
