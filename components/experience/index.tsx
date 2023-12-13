@@ -1,11 +1,6 @@
 "use client";
 
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import { SectionHeading } from "@/components";
 import { useSectionInView } from "@/hooks";
 import { experiencesData } from "@/lib";
@@ -35,53 +30,20 @@ export default function Experience() {
             className="border-2-2 absolute bg-gray-300 h-full border w-1 rounded-full"
             style={{ left: "49.9%" }}
           ></div>
-          <motion.div
-            className="mb-8 flex justify-between items-center w-full right-timeline"
-            variants={fadeInAnimation}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            custom={1}
-          >
-            <TimelineTick value={experiencesData[0].icon} />
-            <TimelineCard value={experiencesData[0]} />
-          </motion.div>
-
-          <motion.div
-            className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
-            variants={fadeInAnimation}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            custom={3}
-          >
-            <TimelineTick value={"2"} />
-            <TimelineCard value={experiencesData[1]} />
-          </motion.div>
-
-          <motion.div
-            className="mb-8 flex justify-between items-center w-full right-timeline"
-            variants={fadeInAnimation}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            custom={5}
-          >
-            <TimelineTick value={"3"} />
-            <TimelineCard value={experiencesData[0]} />
-          </motion.div>
-
-          <motion.div
-            className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
-            variants={fadeInAnimation}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            custom={7}
-          >
-            <TimelineTick value={"4"} />
-            <TimelineCard value={experiencesData[0]} />
-          </motion.div>
+          {experiencesData.map((data, index) => (
+            <motion.div
+              key={index}
+              className={data.className}
+              variants={fadeInAnimation}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              custom={index}
+            >
+              <TimelineTick value={data.icon} />
+              <TimelineCard value={data} />
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
