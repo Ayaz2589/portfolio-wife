@@ -39,16 +39,16 @@ export const experiencesData = [
     company: "Dev Bootcamp",
     location: "New York, NY",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 6 months of studying. During the course I learned Javascript React and Ruby on Rails.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2016",
   },
   {
     title: "Front-End Developer Apprentice",
     company: "Calvin Klein",
     location: "New York, NY",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a front-end developer apprentice. I worked on the Calvin Klein website and the Calvin Klein Underwear website.",
     icon: React.createElement(CgWorkAlt),
     date: "2016 - 2017",
   },
@@ -57,8 +57,8 @@ export const experiencesData = [
     company: "The Bacon",
     location: "New York, NY",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
+      "I worked as a web developer. I worked on the frontend website and their backend Ruby on Rails API.",
+    icon: React.createElement(CgWorkAlt),
     date: "2017 - 2018",
   },
   {
@@ -66,8 +66,8 @@ export const experiencesData = [
     company: "Goldman Sachs",
     location: "New York, NY",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
+      "Developed the GSenarios securities dashboard using React, Redux, and ag-grid. Collaborated on UX design and contributed to the Delphi Inventory Management System for streamlined processes.",
+    icon: React.createElement(CgWorkAlt),
     date: "2018 - 2020",
   },
   {
@@ -75,9 +75,18 @@ export const experiencesData = [
     company: "K Health",
     location: "New York, NY",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
+      "Developed Medical History UI in React, integrated K Accounts Service v2 with Ping Identity, and revamped legacy accounts logic. Led planning for v3 of Accounts Service, optimized speed, and facilitated user migration. Provided key support in creating K Health's React component library. Gain insights in agile planning through shadowing a Technical Product Manager.",
+    icon: React.createElement(CgWorkAlt),
     date: "2020 - 2022",
+  },
+  {
+    title: "UX/UI Course completed",
+    company: "Brain Station",
+    location: "New York, NY",
+    description:
+      "Completed an 8 Week immersive to learn the fundamentals of UX/UI design.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023",
   },
 ] as const;
 
