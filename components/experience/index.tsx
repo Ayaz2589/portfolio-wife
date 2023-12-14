@@ -38,7 +38,7 @@ export default function Experience() {
       <div className="container mx-auto w-full h-full">
         <div className="relative wrap overflow-hidden p-4 sm:p-10 h-full">
           <div
-            className="hidden sm:block border-2-2 absolute bg-gray-300 h-full border w-1 rounded-full"
+            className="hidden sm:block absolute bg-gray-300 h-full w-1 rounded-full"
             style={{ left: "49.9%" }}
           ></div>
           {experiencesData.map((data, index) => (
@@ -69,7 +69,7 @@ function TimelineCard({ value }: { value: any }) {
           {value.icon}
         </h1>
       </div>
-      <div className="w-full order-1 bg-white/70 border border-black/[0.1] rounded-xl sm:w-5/12 px-6 py-4 text-left min-h-[10rem] text-gray-600 mb-4 sm:mb-0">
+      <div className="w-full order-1 bg-white/70 rounded-xl sm:w-5/12 px-6 py-4 text-left min-h-[10rem] text-gray-600 mb-4 sm:mb-0">
         <h3 className="text-lg text-gray-800 font-semibold">{value.title}</h3>
         <h4 className="text-sm text-gray-800 mb-2">{value.company}</h4>
         <p className="text-xs">{value.location}</p>
