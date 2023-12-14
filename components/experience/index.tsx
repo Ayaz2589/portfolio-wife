@@ -69,12 +69,12 @@ function TimelineCard({ value }: { value: any }) {
           {value.icon}
         </h1>
       </div>
-      <div className="w-full order-1 bg-white border border-black/[0.1] rounded-xl sm:w-5/12 px-6 py-4 text-left min-h-[10rem] text-gray-600 mb-4 sm:mb-0">
+      <div className="w-full order-1 bg-white/70 border border-black/[0.1] rounded-xl sm:w-5/12 px-6 py-4 text-left min-h-[10rem] text-gray-600 mb-4 sm:mb-0">
         <h3 className="text-lg text-gray-800 font-semibold">{value.title}</h3>
         <h4 className="text-sm text-gray-800 mb-2">{value.company}</h4>
         <p className="text-xs">{value.location}</p>
         <p className="text-xs">{value.date}</p>
-        <hr className="my-3 h-[1px] border-t-0 bg-gray-200 opacity-100 dark:opacity-50" />
+        <hr className="my-3 h-[1px] border-t-0 bg-gray-300 opacity-100 dark:opacity-50" />
         <p className="text-sm py-3 leading-6">{value.description}</p>
       </div>
     </>
