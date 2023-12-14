@@ -9,3 +9,4 @@ export { default as Skills } from "./skills";
 export { default as Experience } from "./experience";
 export { default as Contact } from "./contact";
 export { default as BackgroundAnimation } from "./background-animation";
+export { default as SubmitBtn } from "./submit-btn";
