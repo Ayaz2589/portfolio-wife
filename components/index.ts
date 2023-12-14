@@ -8,3 +8,4 @@ export { default as Project } from "./projects/project";
 export { default as Skills } from "./skills";
 export { default as Experience } from "./experience";
 export { default as Contact } from "./contact";
+export { default as BackgroundAnimation } from "./background-animation";
