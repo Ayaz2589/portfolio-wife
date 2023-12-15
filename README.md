@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ayaz Uddin - Portfolio Site
 
-## Getting Started
+Welcome to the GitHub repository for Ayaz Uddin's portfolio site! This project showcases the skills and projects of Ayaz Uddin, a passionate full-stack developer. The site is built using React, Next.js, TypeScript, Tailwind CSS, Framer Motion, and includes features like React Email & Resend. The portfolio is hosted on Vercel for seamless deployment and scalability.
 
-First, run the development server:
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+
+Ayaz Uddin's portfolio site is designed to showcase his technical skills, projects, and experience as a full-stack developer. The site provides a clean and interactive interface for visitors to explore Ayaz's work and get in touch with him.
+
+## Features
+
+- **Interactive Design**: Framer Motion is used to create smooth animations and transitions, providing an engaging user experience.
+
+- **Contact Form with Email Resend**: The portfolio includes a React Email & Resend feature to enhance communication with visitors.
+
+- **TypeScript**: The entire codebase is written in TypeScript for improved maintainability and type safety.
+
+- **Responsive UI with Tailwind CSS**: The site is fully responsive, ensuring a seamless experience across various devices and screen sizes.
+
+## Tech Stack
+
+- **React & Next.js**: Building the user interface and handling server actions.
+
+- **TypeScript**: Adding static types for a more robust codebase.
+
+- **Tailwind CSS**: Styling the components with a utility-first CSS framework.
+
+- **Framer Motion**: Creating smooth animations and transitions.
+
+- **React Email & Resend**: Implementing a contact form with email resend functionality.
+
+- **Vercel**: Hosting the portfolio for easy deployment and scalability.
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ayaz2589/portfolio.git
+   ```
+2. Install dependencies:
+
+    ```bash
+    cd portfolio
+    npm install
+    ```
+
+## Usage
+
+Once the installation is complete, you can start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000 in your browser to view the portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
