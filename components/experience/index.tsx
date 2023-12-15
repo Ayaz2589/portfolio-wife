@@ -5,12 +5,6 @@ import { SectionHeading } from "@/components";
 import { useSectionInView } from "@/hooks";
 import { experiencesData } from "@/lib";
 import { motion } from "framer-motion";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
 
 const fadeInAnimation = {
   initial: { opacity: 0, y: 100 },
@@ -32,7 +26,7 @@ export default function Experience() {
     <section
       ref={ref}
       id="experience"
-      className="mb-28 text-center sm:mb-0 scroll-mt-28"
+      className="pb-28 text-center sm:mb-0 scroll-mt-28"
     >
       <SectionHeading>Experience</SectionHeading>
       <div className="container mx-auto w-full h-full">
@@ -69,7 +63,7 @@ function TimelineCard({ value }: { value: any }) {
           {value.icon}
         </h1>
       </div>
-      <div className="w-full order-1 bg-white/70 rounded-xl sm:w-5/12 px-6 py-4 text-left min-h-[10rem] text-gray-600 mb-4 sm:mb-0">
+      <div className="w-full order-1 bg-white/70 rounded-xl sm:w-5/12 px-6 py-4 text-left min-h-[10rem] text-gray-600 mb-4 sm:mb-0 shadow-sm">
         <h3 className="text-lg text-gray-800 font-semibold">{value.title}</h3>
         <h4 className="text-sm text-gray-800 mb-2">{value.company}</h4>
         <p className="text-xs">{value.location}</p>

@@ -6,6 +6,7 @@ import {
   Skills,
   Experience,
   Contact,
+  Footer,
 } from "@/components";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
+      <Footer />
     </main>
   );
 }
