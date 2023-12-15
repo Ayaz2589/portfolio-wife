@@ -39,7 +39,7 @@ export default function Contact() {
       </p>
 
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="w-[95%] sm:w-full mt-10 flex flex-col dark:text-black mx-auto"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
