@@ -97,6 +97,8 @@ export const projectsData = [
       "The Dashboard showcases React and TypeScript's capabilities in a clean and maintainable codebase for a responsive and interactive user interface.",
     tags: ["React", "Material UI", "ReCharts", "AG-Grid", "JWT Auth", "Axios"],
     imageUrl: corpcommentImg,
+    repository: "https://github.com/Ayaz2589/streaming-subscription-dashboard",
+    link: "https://streaming-subscription-dashboard.vercel.app/dashboard",
   },
   {
     title: "Node Services",
@@ -104,6 +106,8 @@ export const projectsData = [
       "The NodeJS backend powers 'The Dashboard' web app's authentication and data fetching, using MongoDB Atlas for user data storage.",
     tags: ["Node", "Express", "Bcrpyt", "JWT", "Mongo DB", "Mongoose"],
     imageUrl: rmtdevImg,
+    repository: "https://github.com/Ayaz2589/app-backend-api",
+    link: "app-backend-api-jet.vercel.app",
   },
   {
     title: "Portfolio",
@@ -111,6 +115,8 @@ export const projectsData = [
       "User Portfolio that allows users to learn about my skills and experience, As well as contact me.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    repository: "https://github.com/Ayaz2589/portfolio",
+    link: "https://portfolio-ayaz2589.vercel.app/",
   },
 ] as const;
 
