@@ -14,7 +14,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28"
+      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28 pt-[5rem]"
       initial={{
         opacity: 0,
       }}
@@ -39,7 +39,7 @@ export default function Contact() {
       </p>
 
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="w-[95%] sm:w-full mt-10 flex flex-col dark:text-black mx-auto"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
