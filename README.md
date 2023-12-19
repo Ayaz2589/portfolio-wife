@@ -2,6 +2,10 @@
 
 Welcome to the GitHub repository for Ayaz Uddin's portfolio site! This project showcases the skills and projects of Ayaz Uddin, a passionate full-stack developer. The site is built using React, Next.js, TypeScript, Tailwind CSS, Framer Motion, and includes features like React Email & Resend. The portfolio is hosted on Vercel for seamless deployment and scalability.
 
+## Live Site
+
+Visit the live site: https://www.ayaz.work/
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -50,12 +54,13 @@ To run the project locally, follow these steps:
    ```bash
    git clone https://github.com/ayaz2589/portfolio.git
    ```
+
 2. Install dependencies:
 
-    ```bash
-    cd portfolio
-    npm install
-    ```
+   ```bash
+   cd portfolio
+   npm install
+   ```
 
 ## Usage
 
@@ -66,4 +71,3 @@ npm run dev
 ```
 
 Visit http://localhost:3000 in your browser to view the portfolio.
-
