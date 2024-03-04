@@ -81,7 +81,7 @@ export const experiencesData = [
     description:
       "Developed Medical History UI in React, integrated K Accounts Service v2 with Ping Identity, and revamped legacy accounts logic. Led planning for v3 of Accounts Service, optimized speed, and facilitated user migration. Provided key support in creating K Health's React component library. Gain insights in agile planning through shadowing a Technical Product Manager.",
     icon: React.createElement(CgWorkAlt),
-    date: "2020 - 2022",
+    date: "2020 - 2023",
   },
   {
     title: "UX/UI Course completed",
