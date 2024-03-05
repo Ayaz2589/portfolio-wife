@@ -39,49 +39,40 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    company: "Dev Bootcamp",
+    title: "Jr. Frontend Web Developer",
+    company: "Greensbury Market",
     location: "New York, NY",
     description:
-      "I graduated after 6 months of studying. During the course I learned Javascript React and Ruby on Rails.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2016",
-  },
-  {
-    title: "Front-End Developer Apprentice",
-    company: "Calvin Klein",
-    location: "New York, NY",
-    description:
-      "I worked as a front-end developer apprentice. I worked on the Calvin Klein website and the Calvin Klein Underwear website.",
+      "Refined e-commerce grocery store frontend with a focus on JavaScript and Shopify integration. Specialized in enhancing styling and optimizing checkout functionality.",
     icon: React.createElement(CgWorkAlt),
-    date: "2016 - 2017",
+    date: "June 2016 - March 2017",
   },
   {
-    title: "Web Developer",
+    title: "Frontend Web Developer",
     company: "The Bacon",
     location: "New York, NY",
     description:
-      "I worked as a web developer. I worked on the frontend website and their backend Ruby on Rails API.",
+      "Contributed to React frontend development for a same-day service platform. Developed diverse features such as task management and payment processing. Collaborated with an off-site team to assist in the construction of the React Native platform.",
     icon: React.createElement(CgWorkAlt),
-    date: "2017 - 2018",
+    date: "April 2017 - July 2018",
   },
   {
     title: "Frontend Software Engineer",
     company: "Goldman Sachs",
     location: "New York, NY",
     description:
-      "Developed the GSenarios securities dashboard using React, Redux, and ag-grid. Collaborated on UX design and contributed to the Delphi Inventory Management System for streamlined processes.",
+      "Implemented a securities dashboard utilizing React and Redux, with a focus on performance and optimization. Collaborated with the UX/UI team to enhance various dashboard tools for improved usability. Designed and developed an Inventory Management System using a frontend micro-framework.",
     icon: React.createElement(CgWorkAlt),
-    date: "2018 - 2020",
+    date: "November 2018 - October 2020",
   },
   {
     title: "Fullstack Software Engineer",
     company: "K Health",
     location: "New York, NY",
     description:
-      "Developed Medical History UI in React, integrated K Accounts Service v2 with Ping Identity, and revamped legacy accounts logic. Led planning for v3 of Accounts Service, optimized speed, and facilitated user migration. Provided key support in creating K Health's React component library. Gain insights in agile planning through shadowing a Technical Product Manager.",
+      "Developed a React-based questionnaire service to match users effectively with suitable physicians. Prioritized accurate collection of medical history and symptoms during user signup. Managed updates to the identity service and migration of the user database to an external partner. Contributed to the development of a component library. Additionally, served as an adjunct scrum master, leading sprint planning, grooming, and retrospective sessions.",
     icon: React.createElement(CgWorkAlt),
-    date: "2020 - 2023",
+    date: "October 2020 - June 2023",
   },
   {
     title: "UX/UI Course completed",
