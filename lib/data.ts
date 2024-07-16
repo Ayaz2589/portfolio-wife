@@ -38,6 +38,15 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Web Development Course Completed",
+    company: "New Jersey Institute of Technology",
+    location: "Newark, NJ",
+    description:
+      "Took courses in web development as part of my core ciriculum, focusing on HTML, CSS, JavaScript, Ruby on Rails and SQL.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Gratuated May 2014 B.S. in Management Information Systems",
+  },
+  {
     title: "Jr. Frontend Web Developer",
     company: "Greensbury Market",
     location: "New York, NY",
