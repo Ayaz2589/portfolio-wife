@@ -20,18 +20,16 @@ export default function AboutMe() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
-        <span className="font-medium">Management Information Systems</span>, I
-        decided to pursue my passion for programming. I enrolled in a coding
-        bootcamp and learned{" "}
+        <span className="font-medium">Management Information Systems</span> and taking web development courses at university, I
+        decided to pursue my passion for programming and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
         is{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js, Node.js, and Typescript
         </span>
-        . I am also knowledgable with TypeScript, Prisma and Material UI.
       </p>
       <p>
         During my tenture as a programmer I had the oportunity to work on large{" "}
