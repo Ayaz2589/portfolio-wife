@@ -54,7 +54,7 @@ export const experiencesData = [
     description:
       "Contributed to React frontend development for a same-day service platform. Developed diverse features such as task management and payment processing. Collaborated with an off-site team to assist in the construction of the React Native platform.",
     icon: React.createElement(CgWorkAlt),
-    date: "April 2017 - July 2018",
+    date: "April 2017 - October 2018",
   },
   {
     title: "Frontend Software Engineer",
@@ -72,7 +72,7 @@ export const experiencesData = [
     description:
       "Developed a React-based questionnaire service to match users effectively with suitable physicians. Prioritized accurate collection of medical history and symptoms during user signup. Managed updates to the identity service and migration of the user database to an external partner. Contributed to the development of a component library. Additionally, served as an adjunct scrum master, leading sprint planning, grooming, and retrospective sessions.",
     icon: React.createElement(CgWorkAlt),
-    date: "October 2020 - June 2023",
+    date: "October 2020 - September 2023",
   },
   {
     title: "UX/UI Course completed",
@@ -81,7 +81,16 @@ export const experiencesData = [
     description:
       "Completed an 8 Week immersive to learn the fundamentals of UX/UI design.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023",
+    date: "May 2023",
+  },
+  {
+    title: "Senior Frontend Engineer",
+    company: "Cross Terra",
+    location: "New York, NY",
+    description:
+      "Developed a React-based questionnaire service to match users effectively with suitable physicians. PDevelop e-commerce storefronts and an admin dashboard with Next.js for brands entering the Asian market, collaborating with backend engineers, Product Manager, and Designer for optimal user experience and functionality.",
+    icon: React.createElement(CgWorkAlt),
+    date: "March 2024 - Current",
   },
 ] as const;
 
@@ -116,8 +125,7 @@ export const projectsData = [
 ] as const;
 
 export const skills = [
-  "HTML",
-  "CSS",
+  "HTML/CSS",
   "JavaScript",
   "TypeScript",
   "React",
@@ -125,13 +133,16 @@ export const skills = [
   "Node.js",
   "Material UI",
   "Chakra UI",
-  "Git",
+  "Andt Design",
   "Tailwind",
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
+  "Zustand",
   "Express",
   "Storybook",
   "Framer Motion",
+  "Jest/React Testing Library",
+  "Python",
+  "FastAPI"
 ] as const;
