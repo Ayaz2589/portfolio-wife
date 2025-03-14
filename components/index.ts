@@ -11,4 +11,3 @@ export { default as Contact } from "./contact";
 export { default as BackgroundAnimation } from "./background-animation";
 export { default as SubmitBtn } from "./submit-btn";
 export { default as Footer } from "./footer";
-export { default as UserExperience } from "./uxui";
