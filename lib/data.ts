@@ -27,10 +27,6 @@ export const links = [
     hash: "#experience",
   },
   {
-    name: "UX/UI",
-    hash: "#uxui",
-  },
-  {
     name: "Contact",
     hash: "#contact",
   },

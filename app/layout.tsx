@@ -22,7 +22,6 @@ export default function RootLayout({
       <body className={`${inter.className} bg-gray-50 text-gray-950 relative`}>
         <BackgroundAnimation />
         <ActiveSectionContextProvider>
-          <Header />
           {children}
           <Toaster position="top-right" />
         </ActiveSectionContextProvider>

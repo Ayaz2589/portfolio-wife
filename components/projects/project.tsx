@@ -1,85 +1,80 @@
 "use client";
 
-import React, { useRef } from "react";
-import { projectsData } from "@/lib";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { useScroll, motion, useTransform } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = {
+  title: string;
+  imageUrl?: string;
+};
 
-export default function Project({
-  title,
-  description,
-  imageUrl,
-  tags,
-  link,
-  repository,
-}: ProjectProps) {
+export default function Project({ title, imageUrl }: ProjectProps) {
+  const router = useRouter();
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const scrollOpacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  // State to control the flip
+  const [flipped, setFlipped] = useState(false);
+
+  const handleClick = () => {
+    // Trigger the flip animation
+    setFlipped(true);
+    console.log("Card clicked");
+  };
+
+  // When the flip animation completes and the card is flipped, navigate to /project
+  const handleAnimationComplete = () => {
+    if (flipped) {
+      router.push("/projects/ysl");
+    }
+  };
+
   return (
     <motion.div
       ref={ref}
-      style={{ scale, opacity }}
-      className="mb-3 sm:mb-8 last:mb-0"
+      style={{ opacity: scrollOpacity, perspective: 1000 }}
+      className="mb-3 cursor-pointer last:mb-0 sm:mb-8"
     >
-      <section className="bg-gray-100/60 m-auto max-w-[95%] sm:max-w-[42rem] overflow-hidden sm:pr-8 relative sm:h-[26rem] shadow-sm transition group-even:pl-8 rounded-xl">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">
-          <h3 className="text-2xl text-left font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-          <ul className="flex flex-wrap gap-2 sm:mt-auto mt-4">
-            {tags.map((tag) => (
-              <li
-                key={tag}
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
-          <div className="mt-10">
-            {title === "Node Services" ? (
-              <button
-                type="button"
-                className="text-white bg-gray-800  focus:outline-none focus:ring-4 focus:ring-gray-300 text-xs rounded-full px-4 py-2 me-2 mb-2 dark:bg-gray-800 dark:focus:ring-gray-700 dark:border-gray-700"
-                disabled
-              >
-                <div className="flex gap-2 items-center">
-                  <p>Service is live</p>
-                  <div className="w-[5px] h-[5px] rounded-full bg-green-500"></div>
-                </div>
-              </button>
-            ) : (
-              <a href={link} target="_blank">
-                <button
-                  type="button"
-                  className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 text-xs rounded-full px-4 py-2 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-                >
-                  View Live App
-                </button>
-              </a>
-            )}
-            <a href={repository} target="_blank">
-              <button
-                type="button"
-                className="text-grap-700 bg-gray-200 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 text-xs rounded-full px-4 py-2 me-2 mb-2 border border-gray-200/30 dark:bg-gray-200/30 dark:hover:bg-white dark:focus:ring-gray-700 dark:border-gray-700"
-              >
-                View Repository
-              </button>
-            </a>
-          </div>
-        </div>
-        <Image
-          src={imageUrl}
-          alt={title}
-          className="hidden sm:block absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 hover:scale-[1.04] hover:-translate-x-3 hover:translate-y-3 hover:-rotate-6 transition"
-        />
-      </section>
+      <motion.div
+        onClick={handleClick}
+        animate={
+          flipped ? { rotateY: 180, scale: 1.8 } : { rotateY: 0, scale: 1 }
+        }
+        transition={{
+          duration: 0.6,
+          ease: "easeInOut",
+        }}
+        onAnimationComplete={handleAnimationComplete}
+        style={{ transformStyle: "preserve-3d" }}
+        className="relative m-auto h-[26rem] w-[40rem] max-w-full overflow-hidden rounded-xl bg-gray-100/60 shadow-sm transition"
+      >
+        <motion.div
+          className="absolute inset-0"
+          style={{
+            backfaceVisibility: "hidden",
+            WebkitBackfaceVisibility: "hidden",
+          }}
+          animate={{ opacity: flipped ? 0 : 1 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        >
+          <Image
+            src={
+              imageUrl ||
+              "https://ayaz2589-images.s3.us-east-1.amazonaws.com/tasnuva/portfolio-site/projects/ysl/1.JPG"
+            }
+            alt="Front Face Image"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black opacity-20" />
+        </motion.div>
+      </motion.div>
     </motion.div>
   );
 }

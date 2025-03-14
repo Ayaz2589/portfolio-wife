@@ -7,21 +7,25 @@ import {
   Experience,
   Contact,
   Footer,
-  UserExperience
+  Header,
 } from "@/components";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-24 md:p-24 backdrop-blur-md">
-      <Intro />
-      <SectionDivder />
-      <AboutMe />
-      <Projects />
-      <Skills />
-      <Experience />
-      <UserExperience />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <header className="sticky top-0 z-50 w-full">
+        <Header />
+      </header>
+      <main className="flex flex-col items-center pt-24 backdrop-blur-md md:p-24">
+        <Intro />
+        <SectionDivder />
+        <AboutMe />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }

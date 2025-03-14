@@ -30,7 +30,7 @@ export default function Intro() {
           className="my-10"
         >
           <Image
-            src="/picture.png"
+            src="https://ayaz2589-images.s3.us-east-1.amazonaws.com/tasnuva/portfolio-site/headshot.jpeg"
             alt="Ayaz's profile picture"
             height={192}
             width={192}
